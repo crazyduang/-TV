@@ -1,0 +1,40 @@
+//
+//  WarFlagLiveMacros.pch
+//  WarFlagLive
+//
+//  Created by admin on 16/9/8.
+//  Copyright © 2016年 YL. All rights reserved.
+//
+
+#ifndef WarFlagLiveMacros_pch
+#define WarFlagLiveMacros_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "RootViewController.h"
+#import "Utilities.h"
+#import "AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
+
+extern float kDeviceFactor;
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define kColor_Main_Color [UIColor colorWithRed:0 green:206/255.0 blue:1 alpha:1]
+#define kNavigationBarHeight 44
+#define kStatusBarHeight 20
+#define kMarginTopHeight 64
+#define kTabBarHeight 49
+
+#define HLS_URL @"http://dlhls.cdn.zhanqi.tv/zqlive/"
+
+#define AppURL_HomePage @"http://www.zhanqi.tv/api/static/live.index/recommend-apps.json?"
+#define AppURL_Banner @"http://www.zhanqi.tv/api/touch/apps.banner?rand=1455848328344"
+#define AppURL_Live @"http://www.zhanqi.tv/api/static/live.hots/20-1.json"
+#define AppURL_Game @"http://www.zhanqi.tv/api/ static/game.lists/12-"
+#define AppURL_GameList @"static/game.lives/"
+#define AppURL_End @"consultation/question"
+
+
+#endif /* WarFlagLiveMacros_pch */
